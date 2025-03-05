@@ -1,0 +1,53 @@
+/* navbar.css */
+.navbar {
+  padding: 1rem 0;
+}
+
+.nav-link {
+  color: #000 !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #01c36d !important;
+}
+
+.search-bar {
+  max-width: 300px;
+}
+
+.search-bar:hover {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.btn-primary {
+  background-color: #01c36d;
+  border-color: #01c36d;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background-color: #02d076;
+  border-color: #02d076;
+}
+
+/* Logo boyutunu ayarlama */
+.logo-img {
+  width: 185px; /* Varsayılan genişlik */
+}
+
+@media (max-width: 991.98px) {
+  .logo-img {
+    width: 140px; /* Küçük ekranlarda logo genişliği */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .logo-img {
+    width: 120px; /* Daha küçük ekranlarda logo genişliği */
+  }
+}
+.custom-search {
+  margin: 0 10px 8px auto;
+  font-size: 30px;
+}
