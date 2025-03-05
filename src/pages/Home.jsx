@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function Home() {
-  console.log('Home component rendered')
+  console.log("Home component rendered");
   return (
-    <h1>Home</h1>
-  )
+    <div>
+      <h1>Home</h1>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

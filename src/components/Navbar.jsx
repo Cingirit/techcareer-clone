@@ -8,17 +8,17 @@ import React from "react";
 function Deneme() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid container-lg">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container-fluid container-lg">
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <NavLink className="navbar-brand me-auto">
             <img
@@ -43,24 +43,24 @@ function Deneme() {
           </div>
 
           <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
+            className="offcanvas offcanvas-start"
+            tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <div className="offcanvas-header">
+              <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                 Logo
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+            <div className="offcanvas-body">
+              <ul className="navbar-nav justify-content-start flex-grow-1 pe-3">
                 <NavLink
                   to={"/etkinlikler"}
                   className="nav-item nav-link mx-lg-2"

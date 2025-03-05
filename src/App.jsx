@@ -11,7 +11,7 @@ import "./css/app.css";
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <div className="container">
         <div className="row">
           <div className="col-8">
