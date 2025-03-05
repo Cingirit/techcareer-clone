@@ -8,27 +8,31 @@
   font-weight: 500;
 }
 
-.nav-link:hover {
+.search-bar {
+  width: 300px;
+  border-radius: 5px;
+}
+.search-bar:focus,
+.search-bar:hover {
+  border: 1px solid black;
+}
+.nav-link:hover,
+.nav-link.active {
   color: #01c36d !important;
 }
 
-.search-bar {
-  max-width: 300px;
-}
-
-.search-bar:hover {
-  border: 1px solid black;
-  border-radius: 3px;
-}
-.btn-primary {
+.login-button {
   background-color: #01c36d;
   border-color: #01c36d;
-  white-space: nowrap;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
 }
 
-.btn-primary:hover {
+.login-button:hover {
   background-color: #02d076;
   border-color: #02d076;
+  color: #fff;
 }
 
 /* Logo boyutunu ayarlama */
@@ -47,7 +51,19 @@
     width: 120px; /* Daha küçük ekranlarda logo genişliği */
   }
 }
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
 .custom-search {
-  margin: 0 10px 8px auto;
-  font-size: 30px;
+  font-size: 24px;
+  width: 24px;
+  padding: 5px;
+  margin-right: 20px;
 }

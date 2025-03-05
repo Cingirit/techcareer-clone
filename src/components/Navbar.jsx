@@ -3,81 +3,93 @@ import { IoMdSearch } from "react-icons/io";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/navbar.css";
 
-function Navbar() {
+import React from "react";
+
+function Deneme() {
   return (
-    <nav className="navbar navbar-expand-xl navbar-light container-fluid">
-      {/* TOGGLE BUTTON */}
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
+    <>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid container-lg">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <NavLink className="navbar-brand me-auto">
+            <img
+              className="logo-img"
+              src="https://www.techcareer.net/assets/images/common/techcareer-logo.svg"
+            />
+          </NavLink>
 
-      {/* LOGO */}
-      <NavLink to={"/"} className="navbar-brand ms-2">
-        <img
-          src="https://www.techcareer.net/assets/images/common/techcareer-logo.svg"
-          alt="TechCareer Logo"
-          className="logo-img"
-        />
-      </NavLink>
-
-      {/* SEARCH BAR*/}
-      <div className="input-group search-bar me-lg-3 mb-3 mb-lg-0 ms-3 me-3 d-none d-lg-flex">
-        <span
-          className="input-group-text bg-white border-end-0"
-          id="search-icon"
-        >
-          <IoMdSearch className="text-muted" />
-        </span>
-        <input
-          className="form-control border-start-0"
-          type="search"
-          placeholder="Etkinlik, İş İlanı, Blog Ara"
-          aria-label="Search"
-        />
-      </div>
-
-
-      {/* NAV LINKS */}
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <div className="d-flex flex-column flex-lg-row align-items-lg-center w-100">
-          {/* NAVLINKS */}
-          <div className="d-flex flex-column flex-lg-row gap-3">
-            <NavLink to={"/etkinlikler"} className="nav-link ms-3">
-              Etkinlikler
-            </NavLink>
-            <NavLink to={"/jobs"} className="nav-link ms-3">
-              İş İlanları
-            </NavLink>
-            <NavLink to={"/Trainings"} className="nav-link ms-3">
-              Eğitimler
-            </NavLink>
-            <NavLink to={"/tests"} className="nav-link ms-3">
-              Testler
-            </NavLink>
-            <NavLink to={"/cominity"} className="nav-link ms-3">
-              Kominite
-            </NavLink>
+          <div className="input-group search-bar ms-3 me-auto d-none d-lg-flex">
+            <span
+              className="input-group-text bg-white border-end-0"
+              id="search-icon"
+            >
+              <IoMdSearch className="text-muted" />
+            </span>
+            <input
+              className="form-control border-start-0"
+              type="search"
+              placeholder="Etkinlik, İş İlanı, Blog Ara"
+              aria-label="Search"
+            />
           </div>
-        </div>
-      </div>
 
-      {/* LOGIN BUTTON AND SEARCH LOGO*/}
-      <div className="d-lg-none custom-search" >
-        <IoMdSearch/>
-      </div>
-      <button className="btn btn-primary border-xl-last">
-        Giriş / Üye Ol
-      </button>
-    </nav>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Logo
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                <NavLink
+                  to={"/etkinlikler"}
+                  className="nav-item nav-link mx-lg-2"
+                >
+                  Etkinlikler
+                </NavLink>
+                <NavLink to={"/jobs"} className="nav-item nav-link mx-lg-2">
+                  İş İlanları
+                </NavLink>
+                <NavLink to={"/jobs"} className="nav-item nav-link mx-lg-2">
+                  Eğitimler
+                </NavLink>
+                <NavLink to={"/jobs"} className="nav-item nav-link mx-lg-2">
+                  Testler
+                </NavLink>
+                <NavLink to={"/jobs"} className="nav-link mx-lg-2">
+                  Komünite
+                </NavLink>
+              </ul>
+            </div>
+          </div>
+          <div className="d-lg-none custom-search">
+            <IoMdSearch />
+          </div>
+          <button className="login-button btn">Giriş / Üye Ol</button>
+        </div>
+      </nav>
+    </>
   );
 }
 
-export default Navbar;
+export default Deneme;
