@@ -10,7 +10,7 @@ import { FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="background">
+    <div className="fdiv background">
       <div className="container pt-4">
         <div className="row pt-3">
           <div className="col-md-2 text-center">
@@ -100,7 +100,7 @@ function Footer() {
             <div className="col-md-1 text-center">
               <img
                 id="iskur"
-                src="/public\images\iskur.webp"
+                src="\images\iskur.webp"
                 width="57px"
                 height="55px"
               />

@@ -8,7 +8,7 @@ import React from "react";
 function Deneme() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="fdiv navbar navbar-expand-lg shadow-sm bg-body-tertiary rounded">
         <div className="container-fluid container-lg">
           <button
             className="navbar-toggler"
@@ -85,7 +85,7 @@ function Deneme() {
           <div className="d-lg-none custom-search">
             <IoMdSearch />
           </div>
-          <button className="login-button btn">Giriş / Üye Ol</button>
+          <button className="classic-button btn">Giriş / Üye Ol</button>
         </div>
       </nav>
     </>

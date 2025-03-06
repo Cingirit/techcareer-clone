@@ -1,8 +1,3 @@
-/* navbar.css */
-.navbar {
-  padding: 1rem 0;
-}
-
 .nav-link {
   color: #000 !important;
   font-weight: 500;
@@ -21,23 +16,10 @@
   color: #01c36d !important;
 }
 
-.login-button {
-  background-color: #01c36d;
-  border-color: #01c36d;
-  color: #fff;
-  font-size: 14px;
-  border-radius: 5px;
-}
-
-.login-button:hover {
-  background-color: #02d076;
-  border-color: #02d076;
-  color: #fff;
-}
-
 /* Logo boyutunu ayarlama */
 .logo-img {
   width: 185px; /* Varsayılan genişlik */
+  transition: ease-in;
 }
 
 @media (max-width: 991.98px) {

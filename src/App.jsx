@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "../src/pages/Home";
+import Home from "./pages/home/Home";
 import Trainings from "./pages/Trainings";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -12,16 +12,10 @@ function App() {
   return (
     <>
       <Navbar/>
-      <div className="container">
-        <div className="row">
-          <div className="col-8">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/trainings" element={<Trainings />} />
             </Routes>
-          </div>
-        </div>
-      </div>
       <Footer />
     </>
   );
