@@ -14,15 +14,15 @@ function FooterList({ children, title }) {
       <div className="d-lg-none">
         <div className="container">
           <div className="row" onClick={clickHandler}>
-            <div className="col-11">
+            <div className="col-11 my-3">
               <p>{title}</p>
             </div>
-            <div className="col-1">
+            <div className="col-1 my-3">
               {isOpen ? <FaAngleUp /> : <FaAngleDown />}
             </div>
           </div>
           <div className={`menu ${isOpen ? "d-none" : ""}`}>
-            <div className="col-11">{children}</div>
+            <div className="col-11 mt-3">{children}</div>
           </div>
         </div>
       </div>

@@ -80,3 +80,9 @@
     width: 100%;
   }
 }
+.mail-btn{
+  position: relative;
+  right: 80px;
+  height: 40px;
+  top: 5px;
+}

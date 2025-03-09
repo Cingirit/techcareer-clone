@@ -5,6 +5,9 @@ import Card from "../../components/Card.jsx";
 import CardBtn from "../../components/CardBtn.jsx";
 import Carousel from "../../components/Carousel.jsx";
 import MiniCard from "../../components/MiniCard.jsx";
+import References from "../../components/References.jsx";
+import FromYouCarousel from "../../components/FromYouCarousel.jsx";
+import { CiMail } from "react-icons/ci";
 
 function Home() {
   const [active, setActive] = useState(1);
@@ -330,11 +333,115 @@ function Home() {
             edebileceğin teknoloji bloğu sayfamızı hemen ziyaret edebilirsin."
               ></MiniCard>
             </div>
-            
           </div>
         </div>
       </div>
       {/* Mini Card Section End*/}
+      {/* References Section Start */}
+      <div className="fdiv f0f0f0 p-5">
+        <div className="container p-4">
+          <div className="fw-semibold fs-2">Referanslarımız</div>
+          <div className="col-12" style={{ height: "500px" }}>
+            <References></References>
+          </div>
+          <div
+            className="classic-button-outline text-center mt-3 ms-2"
+            style={{ width: "8rem" }}
+          >
+            Tümünü Gör
+          </div>
+        </div>
+      </div>
+      {/* References Section End */}
+      {/* References İmages Section Start */}
+      <div className="fdiv mb-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-6 col-md-2">
+              <img src="/references/1.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/4.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/7.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/18.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/27.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/21.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/1.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/4.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/7.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/18.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/27.webp" />
+            </div>
+            <div className="col-6 col-md-2">
+              <img src="/references/21.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* References İmages Section End */}
+      {/* Tester Section Start */}
+      <div className="fdiv f0f0f0 mt-5">
+        <div className="container">
+          <div className="fw-semibold fs-2">Bizi Katılımcılarımızdan Dinle</div>
+          <FromYouCarousel></FromYouCarousel>
+        </div>
+      </div>
+      {/* Tester Section End */}
+      {/* Email Section Start */}
+      <div className="fdiv" style={{ backgroundColor: "#293349" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <p className="fw-medium fs-3" style={{ color: "white" }}>
+                İşveren Misin?
+              </p>
+              <p className="fs-5" style={{ color: "white" }}>
+                Hemen bizimle iletişime geç, aradığın yazılımcıları hızlıca
+                bulalım
+              </p>
+            </div>
+            <div
+              className="col-md-6 d-flex justify-content-center mt-2"
+              style={{ height: "50px" }}
+            >
+              <div className="input-group">
+                <span
+                  className="input-group-text bg-white border-end-0"
+                  id="search-icon"
+                >
+                  <CiMail className="text-muted fs-3" />
+                </span>
+                <input
+                  className="form-control border-start-0"
+                  type="search"
+                  placeholder="E-mail"
+                  aria-label="Search"
+                />
+              </div>
+                <button className="btn classic-button mail-btn">Gönder</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Email Section End */}
     </div>
   );
 }

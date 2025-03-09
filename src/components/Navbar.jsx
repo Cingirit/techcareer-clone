@@ -20,7 +20,7 @@ function Deneme() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <NavLink className="navbar-brand me-auto">
+          <NavLink to={"/"} className="navbar-brand me-auto">
             <img
               className="logo-img"
               src="https://www.techcareer.net/assets/images/common/techcareer-logo.svg"
@@ -70,13 +70,13 @@ function Deneme() {
                 <NavLink to={"/jobs"} className="nav-item nav-link mx-lg-2">
                   İş İlanları
                 </NavLink>
-                <NavLink to={"/jobs"} className="nav-item nav-link mx-lg-2">
+                <NavLink to={"/education"} className="nav-item nav-link mx-lg-2">
                   Eğitimler
                 </NavLink>
-                <NavLink to={"/jobs"} className="nav-item nav-link mx-lg-2">
+                <NavLink to={"/tests"} className="nav-item nav-link mx-lg-2">
                   Testler
                 </NavLink>
-                <NavLink to={"/jobs"} className="nav-link mx-lg-2">
+                <NavLink to={"/comunity"} className="nav-link mx-lg-2">
                   Komünite
                 </NavLink>
               </ul>
