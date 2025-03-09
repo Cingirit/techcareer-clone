@@ -1,0 +1,18 @@
+.mini-btn {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #f6f8ff;
+  font-size: 13px;
+  padding: 0px 5px 0px 5px;
+  display: inline-block;
+}
+.sonBasvuru {
+  color: #929292;
+  font-size: 14px;
+}
+
+
+.card:hover {
+  border: 1px solid black !important;
+  background-color: white !important;
+}

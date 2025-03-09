@@ -27,7 +27,21 @@
   border-color: #02d076;
   color: #fff;
 }
-.custom-text{
+.classic-button-outline {
+  background-color: transparent;
+  border: 2px solid #01c36d;
+  color: #01c36d;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Geçiş efekti */
+}
+.classic-button-outline:hover {
+  background-color: #01c36d;
+  color: #fff;
+}
+.custom-text {
   max-width: 750px;
   font-weight: 400;
   letter-spacing: 0.15px;

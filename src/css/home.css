@@ -27,7 +27,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.33;
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   text-align: center;
 }
@@ -72,6 +71,12 @@
   border: 2px solid black !important;
   background-color: white !important;
 }
-.custom-upper-btn {
-  font-family: Roboto, sans-serif;
+.miniCard{
+  width: 20rem;
+}
+@media (max-width:990px) {
+  .miniCard{
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+  }
 }
