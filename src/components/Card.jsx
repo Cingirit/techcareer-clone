@@ -1,10 +1,11 @@
 import React from "react";
 import "../css/card.css";
+import Bottombtn from "./Bottombtn";
 
-function Card({ title, subtitle, date, footertype = "type1" }) {
+function Card({ id,title, subtitle, date, footertype = "type1", Bottombtn }) {
   return (
     <div>
-      <div className="card p-3" style={{ width: "auto" }}>
+      <div className="card p-3" key={id} style={{ width: "auto" }}>
         <img
           src="/images/1200x628_v1_1_416fe3fc53.webp"
           className="card-img-top"
@@ -12,7 +13,9 @@ function Card({ title, subtitle, date, footertype = "type1" }) {
         <div className="card-body align-items-center text-center">
           <h5 className="card-title fw-semibold">{title}</h5>
           <p className="card-text">{subtitle}</p>
-          <div className="mini-btn text-center">Bootcamp</div>
+          <div>
+            {Bottombtn}
+          </div>
           <hr />
           {footertype === "type1" ? (
             <div className="row">

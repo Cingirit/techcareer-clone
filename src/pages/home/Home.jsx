@@ -8,6 +8,7 @@ import MiniCard from "../../components/MiniCard.jsx";
 import References from "../../components/References.jsx";
 import FromYouCarousel from "../../components/FromYouCarousel.jsx";
 import { CiMail } from "react-icons/ci";
+import Bottombtn from "../../components/Bottombtn.jsx";
 
 function Home() {
   const [active, setActive] = useState(1);
@@ -193,6 +194,7 @@ function Home() {
                 subtitle="Ücretsiz öğren, Mezun ol, Sertifikanı al!"
                 date="09.03.2025"
                 footertype="type1"
+                Bottombtn={Bottombtn({ content: "Bootcamp" })}
               />{" "}
             </div>
             <div className="col-lg-4">
@@ -201,6 +203,7 @@ function Home() {
                 subtitle="Ücretsiz öğren, Mezun ol, Sertifikanı al!"
                 date="09.03.2025"
                 footertype="type1"
+                Bottombtn={Bottombtn({ content: "Bootcamp" })}
               />{" "}
             </div>
             <div className="col-lg-4">
@@ -209,6 +212,7 @@ function Home() {
                 subtitle="Ücretsiz öğren, Mezun ol, Sertifikanı al!"
                 footertype="type1"
                 date="09.03.2025"
+                Bottombtn={Bottombtn({ content: "Bootcamp" })}
               />{" "}
             </div>
           </div>
@@ -436,7 +440,7 @@ function Home() {
                   aria-label="Search"
                 />
               </div>
-                <button className="btn classic-button mail-btn">Gönder</button>
+              <button className="btn classic-button mail-btn">Gönder</button>
             </div>
           </div>
         </div>

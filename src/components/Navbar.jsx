@@ -70,7 +70,7 @@ function Deneme() {
                 <NavLink to={"/jobs"} className="nav-item nav-link mx-lg-2">
                   İş İlanları
                 </NavLink>
-                <NavLink to={"/education"} className="nav-item nav-link mx-lg-2">
+                <NavLink to={"/trainings"} className="nav-item nav-link mx-lg-2">
                   Eğitimler
                 </NavLink>
                 <NavLink to={"/tests"} className="nav-item nav-link mx-lg-2">

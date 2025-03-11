@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "../css/references.css";
 
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 export default function App() {
   return (
@@ -17,11 +17,11 @@ export default function App() {
       <Swiper
         slidesPerView={2}
         spaceBetween={10}
-        autoplay={{ delay: 500 }}
+        autoplay={{ delay: 1500 }}
         loop={true}
         loopAdditionalSlides={1}
         navigation={true}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         breakpoints={{
           768: {
             slidesPerView: 2, // 768px ve üzeri ekranlar için 2 kart
